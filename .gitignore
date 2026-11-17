@@ -1,0 +1,33 @@
+# PRIVATE TEAM REPO -- code and docs only. Competition data and anything derived from it never goes in git.
+# Gated match data (video, ATD, homography, Smart Tagging)
+data/
+*.mp4
+*.xml
+*_atd.txt
+*_homography.csv
+# Any CSV is match data, a submission, or a ground truth -> never commit
+*.csv
+# Derived data: caches, tracking exports, clips, diagnostics, submissions
+cache/
+.cache/
+outputs/
+submission/
+diagnostics/
+evaluation/results/
+evaluation/reports/
+evaluation/gt/
+*.npz
+*.npy
+*.pkl
+*.parquet
+*.gz
+*.zip
+# python / editors
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.idea/
+.vscode/
+.DS_Store
